@@ -1,0 +1,45 @@
+{
+  "name": "anybar",
+  "version": "0.0.0",
+  "description": "Node.js client for the AnyBar app",
+  "license": "MIT",
+  "repository": "sindresorhus/anybar",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "bin": {
+    "anybar": "cli.js"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "bin",
+    "anybar",
+    "app",
+    "osx",
+    "mac",
+    "udp",
+    "status",
+    "color",
+    "dot",
+    "indicator"
+  ],
+  "dependencies": {
+    "meow": "^3.0.0"
+  },
+  "devDependencies": {
+    "ava": "0.0.4"
+  }
+}
