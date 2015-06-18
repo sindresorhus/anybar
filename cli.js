@@ -13,7 +13,7 @@ var cli = meow({
 		'',
 		'Options',
 		'  --port, -p    AnyBar.app port. Default: 1738'
-	].join('\n')
+	]
 }, {
 	string: ['_'],
 	alias: {
@@ -31,6 +31,4 @@ anybar(cli.input[0], cli.flags, function (err) {
 		console.error(err);
 		process.exit(1);
 	}
-
-	process.exit(0);
 });
