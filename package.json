@@ -1,7 +1,7 @@
 {
   "name": "anybar",
   "version": "1.0.0",
-  "description": "Node.js client for the AnyBar app",
+  "description": "Control the AnyBar app",
   "license": "MIT",
   "repository": "sindresorhus/anybar",
   "author": {
@@ -9,21 +9,16 @@
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com"
   },
-  "bin": "cli.js",
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "node test.js"
+    "test": "xo && ava"
   },
   "files": [
-    "index.js",
-    "cli.js"
+    "index.js"
   ],
   "keywords": [
-    "cli-app",
-    "cli",
-    "bin",
     "anybar",
     "app",
     "osx",
@@ -34,10 +29,12 @@
     "dot",
     "indicator"
   ],
-  "dependencies": {
-    "meow": "^3.3.0"
-  },
   "devDependencies": {
-    "ava": "0.0.4"
+    "ava": "*",
+    "xo": "*"
+  },
+  "dependencies": {
+    "pify": "^2.3.0",
+    "pinkie-promise": "^2.0.0"
   }
 }

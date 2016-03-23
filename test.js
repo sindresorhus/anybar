@@ -1,23 +1,10 @@
-'use strict';
-var test = require('ava');
-var anybar = require('./');
+import test from 'ava';
+import m from './';
 
-test('send', function (t) {
-	t.plan(1);
-
-	anybar('green', function (err) {
-		t.assert(!err, err);
-	});
+test('send', async t => {
+	t.notThrows(m('green'));
 });
 
-test('custom port', function (t) {
-	t.plan(1);
-
-	anybar('red', {port: 1000}, function (err) {
-		t.assert(!err, err);
-	});
-});
-
-test('callback optional', function (t) {
-	anybar('blue');
+test('custom port', async t => {
+	t.notThrows(m('red', {port: 1000}));
 });

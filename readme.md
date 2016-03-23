@@ -1,6 +1,6 @@
 # anybar [![Build Status](https://travis-ci.org/sindresorhus/anybar.svg?branch=master)](https://travis-ci.org/sindresorhus/anybar)
 
-> Node.js client for the [AnyBar app](https://github.com/tonsky/AnyBar)
+> Control the [AnyBar app](https://github.com/tonsky/AnyBar)
 
 [![](https://github.com/tonsky/AnyBar/blob/master/AnyBar/Resources/screenshot.png)](https://github.com/tonsky/AnyBar)
 
@@ -15,58 +15,40 @@ $ npm install --save anybar
 ## Usage
 
 ```js
-var anybar = require('anybar');
+const anybar = require('anybar');
 
 anybar('purple');
-//=> the Anybar.app icon turned purple
+//=> the Anybar.app menubar icon turned purple
 ```
 
 
 ## API
 
-### anybar(status, [options], [callback])
+### anybar(status, [options])
+
+Returns a promise, but AnyBar.app doesn't send back a reply, so really the only point of waiting for the promise to resolve is in case of an obscure DNS error.
 
 #### status
 
-*Required*  
 Type: `string`
 
 [Name](https://github.com/tonsky/AnyBar#usage) of the color dot you want AnyBar.app to display.
 
-#### options.port
+#### options
 
-Type: `number`  
+##### port
+
+Type: `number`<br>
 Default: `1738`
 
-The port to communicate with the AnyBar.app.
-
-#### callback
-
-Type: `function`
-
-You probably don't care about this as AnyBar.app doesn't acknowledge a received message, so the only thing you'll catch here is obscure 	system level UDP errors.
+Port to communicate with the AnyBar.app.
 
 
-## CLI
+## Related
 
-```
-$ npm install --global anybar
-```
-
-```
-$ anybar --help
-
-  Usage
-    $ anybar <status>
-
-  Example
-    $ anybar purple
-
-  Options
-    --port, -p    AnyBar.app port. Default: 1738
-```
+- [anybar-cli](https://github.com/sindresorhus/anybar-cli) - CLI for this module
 
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
