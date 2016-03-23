@@ -14,6 +14,6 @@ module.exports = function (status, opts) {
 	var msg = new Buffer(status);
 	var client = dgram.createSocket('udp4');
 
-	return pify(client.send.bind(client))(msg, 0, msg.length, port, 'localhost')
+	return pify(client.send.bind(client), Promise)(msg, 0, msg.length, port, 'localhost')
 		.then(client.close.bind(client));
 };
