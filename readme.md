@@ -2,7 +2,7 @@
 
 > Control the [AnyBar app](https://github.com/tonsky/AnyBar)
 
-[![](https://github.com/tonsky/AnyBar/blob/master/AnyBar/Resources/screenshot.png)](https://github.com/tonsky/AnyBar)
+[![](https://cloud.githubusercontent.com/assets/170270/24325650/cdde4f9e-11cf-11e7-8e1d-5dee07e3c77d.png)](https://github.com/tonsky/AnyBar)
 
 
 ## Install
