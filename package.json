@@ -10,7 +10,7 @@
     "url": "sindresorhus.com"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
     "test": "xo && ava"
@@ -22,7 +22,6 @@
     "anybar",
     "app",
     "macos",
-    "osx",
     "mac",
     "udp",
     "status",
@@ -30,12 +29,11 @@
     "dot",
     "indicator"
   ],
+  "dependencies": {
+    "pify": "^2.3.0"
+  },
   "devDependencies": {
     "ava": "*",
     "xo": "*"
-  },
-  "dependencies": {
-    "pify": "^2.3.0",
-    "pinkie-promise": "^2.0.0"
   }
 }

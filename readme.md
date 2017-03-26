@@ -18,7 +18,7 @@ $ npm install --save anybar
 const anybar = require('anybar');
 
 anybar('purple');
-//=> the Anybar.app menubar icon turned purple
+// The Anybar.app menubar icon turned purple
 ```
 
 
@@ -35,6 +35,8 @@ Type: `string`
 [Name](https://github.com/tonsky/AnyBar#usage) of the color dot you want AnyBar.app to display.
 
 #### options
+
+Type: `Object`
 
 ##### port
 
