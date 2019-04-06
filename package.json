@@ -1,6 +1,6 @@
 {
 	"name": "anybar",
-	"version": "3.0.0",
+	"version": "4.0.0",
 	"description": "Control the AnyBar app",
 	"license": "MIT",
 	"repository": "sindresorhus/anybar",
