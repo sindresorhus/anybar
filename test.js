@@ -1,10 +1,10 @@
 import test from 'ava';
-import m from '.';
+import anybar from '.';
 
 test('send', async t => {
-	await t.notThrows(m('green'));
+	await t.notThrowsAsync(anybar('green'));
 });
 
 test('custom port', async t => {
-	await t.notThrows(m('red', {port: 1000}));
+	await t.notThrowsAsync(anybar('red', {port: 1000}));
 });

@@ -8,7 +8,7 @@
 ## Install
 
 ```
-$ npm install --save anybar
+$ npm install anybar
 ```
 
 
