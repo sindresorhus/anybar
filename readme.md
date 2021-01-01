@@ -1,4 +1,4 @@
-# anybar [![Build Status](https://travis-ci.org/sindresorhus/anybar.svg?branch=master)](https://travis-ci.org/sindresorhus/anybar)
+# anybar
 
 > Control the [AnyBar app](https://github.com/tonsky/AnyBar)
 
