@@ -4,35 +4,32 @@
 
 [![](https://cloud.githubusercontent.com/assets/170270/24325650/cdde4f9e-11cf-11e7-8e1d-5dee07e3c77d.png)](https://github.com/tonsky/AnyBar)
 
-
 ## Install
 
 ```
 $ npm install anybar
 ```
 
-
 ## Usage
 
 ```js
-const anybar = require('anybar');
+import anybar from 'anybar';
 
 anybar('purple');
-// The Anybar.app menubar icon turned purple
+// The Anybar app menu bar icon turned purple
 ```
-
 
 ## API
 
-### anybar(status, [options])
+### anybar(status, options?)
 
-Returns a promise, but AnyBar.app doesn't send back a reply, so really the only point of waiting for the promise to resolve is in case of an obscure DNS error.
+Returns a promise, but the AnyBar app doesn't send back a reply, so really the only point of waiting for the promise to resolve is in case of an obscure DNS error.
 
 #### status
 
 Type: `string`
 
-[Name](https://github.com/tonsky/AnyBar#usage) of the color dot you want AnyBar.app to display.
+The [name](https://github.com/tonsky/AnyBar#usage) of the color dot you want the AnyBar app to display.
 
 #### options
 
@@ -40,17 +37,11 @@ Type: `Object`
 
 ##### port
 
-Type: `number`<br>
+Type: `number`\
 Default: `1738`
 
-Port to communicate with the AnyBar.app.
-
+The port to communicate with the AnyBar app.
 
 ## Related
 
 - [anybar-cli](https://github.com/sindresorhus/anybar-cli) - CLI for this module
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)

@@ -1,5 +1,5 @@
 import {expectType, expectError} from 'tsd';
-import anybar = require('.');
+import anybar from './index.js';
 
 expectType<Promise<void>>(anybar('red'));
 expectType<Promise<void>>(anybar('red', {port: 123}));

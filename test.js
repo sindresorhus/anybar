@@ -1,5 +1,5 @@
 import test from 'ava';
-import anybar from '.';
+import anybar from './index.js';
 
 test('send', async t => {
 	await t.notThrowsAsync(anybar('green'));
