@@ -10,7 +10,9 @@ export type AnybarStatus =
 	| 'black'
 	| 'question'
 	| 'exclamation'
-	| 'quit';
+	| 'quit'
+  | 'filled'
+  | 'hollow';
 
 export interface Options {
 	/**
